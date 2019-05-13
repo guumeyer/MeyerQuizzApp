@@ -1,8 +1,4 @@
 //
-//  AppDelegate.swift
-//  MeyerQuizz
-//
-//  Created by Meyer, Gustavo on 5/9/19.
 //  Copyright © 2019 Gustavo Meyer. All rights reserved.
 //
 
@@ -21,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = QuestionViewController(question: "A question?", options: ["Option 1", "Option 2"]) {
             print($0)
         }
+
+//        let viewController = ResultsViewController(summary: "You got 1/2 correct", answers: [
+//                PresentableAnswer(question: "Question 1", answer: "Yeah", wrongAnswer: nil),
+//                PresentableAnswer(question: "Question 2", answer: "Hell yeah", wrongAnswer: "Hell not")
+//            ])
         _ = viewController.view
         viewController.tableView.allowsMultipleSelection = true
 

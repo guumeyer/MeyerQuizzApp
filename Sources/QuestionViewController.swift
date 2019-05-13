@@ -1,8 +1,4 @@
 //
-//  QuestionViewController.swift
-//  MeyerQuizz
-//
-//  Created by Meyer, Gustavo on 5/9/19.
 //  Copyright © 2019 Gustavo Meyer. All rights reserved.
 //
 

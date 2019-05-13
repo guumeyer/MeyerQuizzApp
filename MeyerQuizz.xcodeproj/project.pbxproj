@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		DB62EFEE22892D3400411640 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB62EFEC22892D3400411640 /* README.md */; };
 		DB62EFEF22892D3400411640 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DB62EFED22892D3400411640 /* LICENSE */; };
+		DB62EFF222893B3800411640 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62EFF122893B3800411640 /* TableViewHelpers.swift */; };
+		DB62EFF6228942DC00411640 /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB62EFF5228942DC00411640 /* CorrectAnswerCell.xib */; };
+		DB62EFF82289467300411640 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB62EFF72289467300411640 /* WrongAnswerCell.xib */; };
+		DB62EFFB22894D4D00411640 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62EFFA22894D4D00411640 /* UITableView.swift */; };
+		DB62EFFD22894EDA00411640 /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62EFFC22894EDA00411640 /* PresentableAnswer.swift */; };
+		DB62EFFF22894EF300411640 /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62EFFE22894EF300411640 /* CorrectAnswerCell.swift */; };
+		DB62F00122894F1900411640 /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62F00022894F1900411640 /* WrongAnswerCell.swift */; };
 		DB68FEEE2284DF23000EE61D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68FEED2284DF23000EE61D /* AppDelegate.swift */; };
 		DB68FEF52284DF24000EE61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68FEF42284DF24000EE61D /* Assets.xcassets */; };
 		DB68FEF82284DF24000EE61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68FEF62284DF24000EE61D /* LaunchScreen.storyboard */; };
@@ -33,6 +40,13 @@
 /* Begin PBXFileReference section */
 		DB62EFEC22892D3400411640 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DB62EFED22892D3400411640 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DB62EFF122893B3800411640 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
+		DB62EFF5228942DC00411640 /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
+		DB62EFF72289467300411640 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
+		DB62EFFA22894D4D00411640 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		DB62EFFC22894EDA00411640 /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
+		DB62EFFE22894EF300411640 /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
+		DB62F00022894F1900411640 /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		DB68FEEA2284DF23000EE61D /* MeyerQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeyerQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68FEED2284DF23000EE61D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB68FEF42284DF24000EE61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +89,14 @@
 			name = Development;
 			sourceTree = "<group>";
 		};
+		DB62EFF922894D3E00411640 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB62EFFA22894D4D00411640 /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DB68FEE12284DF23000EE61D = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +121,18 @@
 			children = (
 				DB68FEED2284DF23000EE61D /* AppDelegate.swift */,
 				DB68FEF42284DF24000EE61D /* Assets.xcassets */,
-				DB68FEF62284DF24000EE61D /* LaunchScreen.storyboard */,
+				DB62EFFE22894EF300411640 /* CorrectAnswerCell.swift */,
+				DB62EFF5228942DC00411640 /* CorrectAnswerCell.xib */,
+				DB62EFF922894D3E00411640 /* Extensions */,
 				DB68FEF92284DF24000EE61D /* Info.plist */,
+				DB68FEF62284DF24000EE61D /* LaunchScreen.storyboard */,
+				DB62EFFC22894EDA00411640 /* PresentableAnswer.swift */,
 				DB68FF0F228501E8000EE61D /* QuestionViewController.swift */,
 				DB68FF1122850288000EE61D /* QuestionViewController.xib */,
 				DB68FF1C228550BE000EE61D /* ResultsViewController.swift */,
 				DB68FF1E22855181000EE61D /* ResultsViewController.xib */,
+				DB62F00022894F1900411640 /* WrongAnswerCell.swift */,
+				DB62EFF72289467300411640 /* WrongAnswerCell.xib */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -115,6 +143,7 @@
 				DB68FF042284DF24000EE61D /* Info.plist */,
 				DB68FF0D2284DFB6000EE61D /* QuestionViewControllerTest.swift */,
 				DB68FF1A22854FD5000EE61D /* ResultsViewControllerTest.swift */,
+				DB62EFF122893B3800411640 /* TableViewHelpers.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -202,11 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB62EFEF22892D3400411640 /* LICENSE in Resources */,
+				DB62EFF82289467300411640 /* WrongAnswerCell.xib in Resources */,
 				DB68FEF82284DF24000EE61D /* LaunchScreen.storyboard in Resources */,
 				DB68FEF52284DF24000EE61D /* Assets.xcassets in Resources */,
 				DB62EFEE22892D3400411640 /* README.md in Resources */,
 				DB68FF1222850288000EE61D /* QuestionViewController.xib in Resources */,
 				DB68FF1F22855181000EE61D /* ResultsViewController.xib in Resources */,
+				DB62EFF6228942DC00411640 /* CorrectAnswerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +278,12 @@
 			files = (
 				DB68FF10228501E8000EE61D /* QuestionViewController.swift in Sources */,
 				DB68FEEE2284DF23000EE61D /* AppDelegate.swift in Sources */,
+				DB62EFFF22894EF300411640 /* CorrectAnswerCell.swift in Sources */,
+				DB62EFFB22894D4D00411640 /* UITableView.swift in Sources */,
+				DB62EFFD22894EDA00411640 /* PresentableAnswer.swift in Sources */,
+				DB62F00122894F1900411640 /* WrongAnswerCell.swift in Sources */,
 				DB68FF1D228550BE000EE61D /* ResultsViewController.swift in Sources */,
+				DB62EFF222893B3800411640 /* TableViewHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
